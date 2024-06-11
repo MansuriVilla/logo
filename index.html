@@ -5,9 +5,6 @@
   <meta name="viewport" content="width=device-width" />
   <title>ParticleSlider</title>
   <style>
-    @hintImg: url('amp-logo.webp');
-
-
     html,
     body {
       width: 100%;
@@ -15,6 +12,8 @@
       margin: 0;
       padding: 0;
       overflow: hidden;
+      user-select: none;
+      -webkit-user-select: none;
     }
 
     .draw {
@@ -22,14 +21,22 @@
       z-index: 1;
     }
 
-    @media (min-width: 1000px) {
-      body {
-        background-image: @hintImg;
-        background-repeat: no-repeat;
+    .slide {
+      /* background: url(amp-logo.webp) center center no-repeat; */
+    }
 
-        &>.dg {
-          display: block;
-        }
+    @media only screen and (max-width:720px) and (min-width:220px) {
+      /* .slide[data-src="m-amp-logo-01-white.png"] { */
+      /* background: url(./t-amp-logo-01-white.png) center center no-repeat; */
+
+    }
+
+    /* } */
+
+    @media only screen and (max-width:520px) and (min-width:220px) {
+      .slide {
+        /* background: url(./m-amp-logo-01-white.png) center center no-repeat; */
+        background-size: contain;
       }
     }
   </style>
@@ -67,10 +74,35 @@
   </customhtml>
   <canvas class="draw"></canvas>
   <script>
+
+
     var init = function () {
+
+      function changeImageBasedOnScreenSize() {
+        var slide = document.getElementById('first-slide');
+        if (window.innerWidth <= 768 && window.innerWidth > 520) {
+          slide.dataset.src = 't-amp-logo-01-white.png';
+        } else if (window.innerWidth <= 520) {
+          slide.dataset.src = ' m-amp-logo-01-white.png';
+        } else if (window.innerWidth <= 420) {
+          slide.dataset.src = ' m-amp-logo-01-whiteu.png';
+        } else if (window.innerWidth <= 390) {
+          slide.dataset.src = ' m-amp-logo-01-whitem.png';
+        }
+        else {
+          slide.dataset.src = 'amp-logo.webp';
+        }
+      }
+
+      // // Call the function on page load and resize
+      window.onload = changeImageBasedOnScreenSize;
+      window.onresize = changeImageBasedOnScreenSize;
+
+      changeImageBasedOnScreenSize();
+
       var isMobile =
         navigator.userAgent &&
-        navigator.userAgent.toLowerCase().indexOf("mobile") >= 0;
+        navigator.userAgent.toLowerCase().indexOf("mobile") >= 1;
       var isSmall = window.innerWidth < 1000;
 
       var ps = new ParticleSlider({
@@ -109,6 +141,7 @@
           "click",
           function () {
             ps.init(true);
+
           },
           false
         )
@@ -132,6 +165,7 @@
         : (window.onload = initParticleSlider)
     );
   </script>
+
 </body>
 
 </html>
