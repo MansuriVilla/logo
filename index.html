@@ -1,171 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brooklyn Travel and Tourism | Coming Soon...</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/Fav-icon.webp"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/intl-tel-input@23.1.0/build/css/intlTelInput.css"
+    />
+  </head>
+  <body>
+    <div id="main">
+      <!-- <div class="pre-loader">
+        <div class="loader-inner">
+          <div class="slab"></div>
+          <div class="slab">
+            <div class="loader-text-content">
+              <ul>
+                <li class="loader-li">
+                  <p>VISA</p>
+                </li>
+                <li class="loader-li">
+                  <p>HOTEL BOOKING</p>
+                </li>
+                <li class="loader-li">
+                  <p>CURISE</p>
+                </li>
+                <li class="loader-li">
+                  <p>PACKAGE</p>
+                </li>
+                <li class="loader-li">
+                  <p>BUS</p>
+                </li>
+                <li class="loader-li">
+                  <p>AIRPLANE</p>
+                </li>
+                <li class="loader-li">
+                  <p>TRAVEL</p>
+                </li>
+                <li class="loader-li">
+                  <p>EXPLORE</p>
+                </li>
 
-<head>
-  <meta name="viewport" content="width=device-width" />
-  <title>ParticleSlider</title>
-  <style>
-    html,
-    body {
-      width: 100%;
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      user-select: none;
-      -webkit-user-select: none;
-    }
-
-    .draw {
-      position: absolute;
-      z-index: 1;
-    }
-
-    .slide {
-      /* background: url(amp-logo.webp) center center no-repeat; */
-    }
-
-    @media only screen and (max-width:720px) and (min-width:220px) {
-      /* .slide[data-src="m-amp-logo-01-white.png"] { */
-      /* background: url(./t-amp-logo-01-white.png) center center no-repeat; */
-
-    }
-
-    /* } */
-
-    @media only screen and (max-width:520px) and (min-width:220px) {
-      .slide {
-        /* background: url(./m-amp-logo-01-white.png) center center no-repeat; */
-        background-size: contain;
-      }
-    }
-  </style>
-</head>
-
-<body id="particle-slider">
-  <div class="slides">
-    <div id="first-slide" class="slide" data-src="amp-logo.webp"></div>
-  </div>
-  <customhtml>
-    <script>
-      function changeColour() {
-        var arrayColours = [
-          "#BCFF84",
-          "#FF73D6",
-          "#9973FF",
-          "#FFE280",
-          "#FFAC60",
-          "#70F9FF",
-          "#FFFFFF",
-        ];
-
-        function getRandomInt(max) {
-          return Math.floor(Math.random() * Math.floor(max));
-        }
-
-        var elem = document.createElement("div");
-        elem.style = `position:absolute;width:100%;height:100%;opacity:1;background: ${arrayColours[getRandomInt(7)]
-          }; mix-blend-mode: darken;`;
-        document.body.appendChild(elem);
-      }
-
-      changeColour();
-    </script>
-  </customhtml>
-  <canvas class="draw"></canvas>
-  <script>
-
-
-    var init = function () {
-
-      function changeImageBasedOnScreenSize() {
-        var slide = document.getElementById('first-slide');
-        if (window.innerWidth <= 768 && window.innerWidth > 520) {
-          slide.dataset.src = 't-amp-logo-01-white.png';
-        } else if (window.innerWidth <= 520) {
-          slide.dataset.src = ' m-amp-logo-01-white.png';
-        } else if (window.innerWidth <= 420) {
-          slide.dataset.src = ' m-amp-logo-01-whiteu.png';
-        } else if (window.innerWidth <= 390) {
-          slide.dataset.src = ' m-amp-logo-01-whitem.png';
-        }
-        else {
-          slide.dataset.src = 'amp-logo.webp';
-        }
-      }
-
-      // // Call the function on page load and resize
-      window.onload = changeImageBasedOnScreenSize;
-      window.onresize = changeImageBasedOnScreenSize;
-
-      changeImageBasedOnScreenSize();
-
-      var isMobile =
-        navigator.userAgent &&
-        navigator.userAgent.toLowerCase().indexOf("mobile") >= 1;
-      var isSmall = window.innerWidth < 1000;
-
-      var ps = new ParticleSlider({
-        ptlGap: isMobile || isSmall ? 0 : 0,
-        ptlSize: isMobile || isSmall ? 1 : 1,
-        width: 1e9,
-        height: 1e9,
-      });
-
-      var gui = new dat.GUI();
-      gui
-        .add(ps, "ptlGap")
-        .min(0)
-        .max(5)
-        .step(5)
-        .onChange(function () {
-          ps.init(true);
-        });
-      gui
-        .add(ps, "ptlSize")
-        .min(1)
-        .max(5)
-        .step(5)
-        .onChange(function () {
-          ps.init(true);
-        });
-      gui.add(ps, "restless");
-      gui.addColor(ps, "color").onChange(function (value) {
-        ps.monochrome = true;
-        ps.setColor(value);
-        ps.init(true);
-      });
-
-      window.addEventListener
-        ? window.addEventListener(
-          "click",
-          function () {
-            ps.init(true);
-
-          },
-          false
-        )
-        : (window.onclick = function () {
-          ps.init(true);
-        });
-    };
-
-    var initParticleSlider = (function () {
-      var psScript = document.createElement("script");
-      psScript.addEventListener
-        ? psScript.addEventListener("load", init, false)
-        : (psScript.onload = init);
-      psScript.src =
-        "https://s3-us-west-2.amazonaws.com/s.cdpn.io/23500/ps-0.9.js";
-      psScript.setAttribute("type", "text/javascript");
-      document.body.appendChild(psScript);
-    })(
-      window.addEventListener
-        ? window.addEventListener("load", initParticleSlider, false)
-        : (window.onload = initParticleSlider)
-    );
-  </script>
-
-</body>
-
+                <img src="./images/Logo-full-gradient.png" alt="logo-fav" />
+              </ul>
+            </div>
+          </div>
+          <div class="slab"></div>
+        </div>
+      </div> -->
+      <div class="main-inner">
+        <div class="inner-top">
+          <img src="./images/Logo-full.webp" alt="Company-Logo" />
+        </div>
+        <div class="main-text-content">
+          <div class="main-content">
+            <div class="content-text">
+              <h1>COMING SOON...</h1>
+              <h2>
+                Our team is working tirelessly to bring you the best in travel.
+                From breathtaking destinations to personalized itineraries, get
+                ready for a new era in travel excellence.
+              </h2>
+            </div>
+            <div class="main-contact-button">
+              <button class="contact-button">CONTACT US</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <div class="img-line">
+          <img class="img-one" src="./images/line.webp" alt="line-img" />
+          <img class="img-two" src="./images/arrow.webp" alt="line-img" />
+        </div>
+        <div class="form-inner">
+          <div class="close-button">
+            <button>
+              <img src="./images/close.webp" alt="close-button" />
+            </button>
+          </div>
+          <div class="form-content">
+            <div class="form-brand-img">
+              <img src="./images/Fav-icon.webp" alt="Form-logo" />
+            </div>
+            <div class="details">
+              <div class="contact-us section">
+                <div class="contact-inner">
+                  <h3>Contact us</h3>
+                  <a href="#" class="contact mail">
+                    <img src="./images/mail.webp" alt="Mail" />
+                    <p>info@brooklyntravelandtourim.com</p>
+                  </a>
+                  <a href="#" class="contact call">
+                    <img src="./images/call.webp" alt="call" />
+                    <p>+91-7874-0019-73</p>
+                  </a>
+                </div>
+                <div class="contact-social">
+                  <a
+                    href="https://www.facebook.com/brooklyntravelandtourism/"
+                    class="social-icon"
+                    target="_blank"
+                  >
+                    <img src="./images/facebook.png" alt="facebook" />
+                  </a>
+                  <a
+                    href="https://www.instagram.com/brooklyntravelandtourism/"
+                    class="social-icon"
+                    target="_blank"
+                  >
+                    <img src="./images/instagram.png" alt="instagram" />
+                  </a>
+                  <a href="#" class="social-icon" target="_blank">
+                    <img src="./images/twitter.png" alt="twitter" />
+                  </a>
+                  <a
+                    href="https://www.youtube.com/@brooklyntravelandtourism"
+                    class="social-icon"
+                    target="_blank"
+                  >
+                    <img src="./images/youtube.png" alt="youtube" />
+                  </a>
+                </div>
+              </div>
+              <div class="form section">
+                <div class="form-input-holder">
+                  <h3>Get in touch!</h3>
+                  <form action="">
+                    <div class="form-field-holder">
+                      <div class="field">
+                        <input type="text" placeholder="First Name*" />
+                      </div>
+                      <div class="field">
+                        <input type="text" placeholder="Last Name*" />
+                      </div>
+                      <div class="fild">
+                        <input
+                          type="tel"
+                          class="mobile_code"
+                          placeholder="Phone Number*"
+                        />
+                      </div>
+                      <div class="field">
+                        <input type="email" placeholder="E-mail*" />
+                      </div>
+                    </div>
+                    <div class="submit-button-main">
+                      <button class="submit-button">SUBMIT</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@23.1.0/build/js/intlTelInput.min.js"></script>
+    <script src="./js/gsap.min.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
 </html>

@@ -1,0 +1,161 @@
+/* @media only screen and (max-width:1920px) and (min-width:0px) {
+  .contact-form {
+    bottom: -76%;
+  }
+} */
+
+@media only screen and (max-width:1440px) and (min-width:0px) {
+  .contact-form .form-inner .form-content .form-brand-img {
+    max-width: 100px;
+  }
+
+  .contact-form .form-inner .form-content .details .contact-us .contact-inner a {
+    padding: 25px 20px;
+  }
+
+  .contact-form .form-inner .form-content .details .form .form-input-holder form .form-field-holder .field,
+  .contact-form .form-inner .form-content .details .form .form-input-holder form .form-field-holder .iti {
+    height: 55px;
+  }
+
+  .contact-form .form-inner .close-button {
+    max-width: 45px;
+  }
+
+  .contact-form {
+    bottom: -71%;
+  }
+}
+
+@media only screen and (max-width:1300px) and (min-width:0px) {
+  .contact-form .form-inner .form-content .details .contact-us .contact-inner a {
+    font-size: 18px;
+  }
+
+  .contact-form .form-inner .form-content .details .contact-us .contact-inner,
+  .contact-form .form-inner .form-content .details .form .form-input-holder {
+    max-width: 400px;
+  }
+
+  .contact-form .contact-social a {
+    padding: 3px;
+  }
+
+  .contact-form .form-inner .form-content .form-brand-img {
+    max-width: 90px;
+  }
+
+}
+
+@media only screen and (max-width:1280px) and (min-width:0px) {
+  .contact-form {
+    bottom: -67%;
+    max-width: 90%;
+  }
+
+}
+
+@media only screen and (max-width:1199px) and (min-width:0px) {
+  .contact-form .form-inner .form-content .details .contact-us .contact-inner a {
+    font-size: 16px;
+    padding: 20px 15px;
+    border-radius: 13px;
+  }
+
+  .contact-form .form-inner .form-content .details .contact-us .contact-inner,
+  .contact-form .form-inner .form-content .details .form .form-input-holder {
+    max-width: 370px;
+  }
+
+  .contact-form .contact-social a {
+    padding: 3px;
+  }
+
+  .contact-form .contact-social a img {
+    max-height: 25px;
+  }
+
+  .contact-form .form-inner .form-content .form-brand-img {
+    max-width: 85px;
+  }
+
+  .contact-form .form-inner .close-button {
+    max-width: 40px;
+  }
+
+  .contact-form .form-inner .form-content .details {
+    gap: 0px;
+  }
+
+  .contact-form {
+    max-width: 90%;
+    border-radius: 30px 30px 0px 0px;
+  }
+
+  .contact-form .form-inner .form-content .details .form .form-input-holder form .form-field-holder .field input,
+  .contact-form .form-inner .form-content .details .form .form-input-holder form .form-field-holder .iti input {
+    font-size: 22px;
+  }
+
+  .contact-form .form-inner .form-content .details .form .form-input-holder form .form-field-holder .field,
+  .contact-form .form-inner .form-content .details .form .form-input-holder form .form-field-holder .iti {
+    height: 50px;
+  }
+
+}
+
+@media only screen and (max-width:991px) and (min-width:0px) {
+  .contact-form .form-inner .form-content .details {
+    gap: 30px;
+    flex-wrap: wrap-reverse;
+    background-color: #fff;
+  }
+
+  .contact-form .form-inner .close-button {
+    z-index: 999;
+  }
+
+  .contact-form.open .form-inner {
+    height: 500px;
+    overflow-x: scroll;
+  }
+
+  .contact-form .form-inner .form-content .details .section {
+    max-width: 90%;
+    margin: 0px auto;
+  }
+
+  .contact-form.open {
+    overflow: hidden;
+  }
+
+  .contact-form.open .img-line {
+    display: none;
+  }
+
+  .contact-form {
+    bottom: -107%;
+  }
+
+}
+
+@media only screen and (max-width:460px) and (min-width:0px) {
+  .contact-form {
+    bottom: -94%;
+  }
+
+}
+
+@media only screen and (max-width:420px) and (min-width:0px) {
+  .contact-form {
+    bottom: -116%;
+  }
+
+}
+
+@media only screen and (max-width:390px) and (min-width:0px) {
+  .contact-form {
+    bottom: -131%;
+  }
+
+}
