@@ -134,6 +134,7 @@ body {
   position: relative;
   overflow: hidden;
   backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 #main .main-inner .main-text-content .main-content .main-contact-button::before {

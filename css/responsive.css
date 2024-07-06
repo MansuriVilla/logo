@@ -22,9 +22,27 @@
     max-width: 45px;
   }
 
-  /* .contact-form {
-    bottom: -71%;
-  } */
+  #main .main-inner .main-text-content .main-content .content-text h1 {
+    font-size: 52px;
+  }
+
+  #main .main-inner .main-text-content .main-content .content-text h2 {
+    font-size: 24px;
+    max-width: 810px;
+  }
+
+  #main .main-inner .main-text-content .main-content .main-contact-button {
+    max-width: 190px;
+    height: 40px;
+  }
+
+  #main .main-inner .main-text-content .main-content .main-contact-button .contact-button {
+    font-size: 18px;
+  }
+
+  .contact-form {
+    bottom: -570px;
+  }
 }
 
 @media only screen and (max-width:1300px) and (min-width:0px) {
@@ -48,11 +66,9 @@
 }
 
 @media only screen and (max-width:1280px) and (min-width:0px) {
-  /* .contact-form {
-    bottom: -67%;
-    max-width: 90%;
-  } */
-
+  .contact-form {
+    bottom: -530px;
+  }
 }
 
 @media only screen and (max-width:1199px) and (min-width:0px) {
@@ -102,9 +118,23 @@
     height: 50px;
   }
 
+  .contact-form {
+    bottom: -856px;
+  }
+
 }
 
 @media only screen and (max-width:991px) and (min-width:0px) {
+  #main .main-inner .main-text-content .main-content .content-text h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+  }
+
+  #main .main-inner .main-text-content .main-content .content-text h2 {
+    font-size: 20px;
+    max-width: 670px;
+  }
+
   .contact-form .form-inner .form-content .details {
     gap: 30px;
     flex-wrap: wrap-reverse;
@@ -139,27 +169,99 @@
 
 }
 
-@media only screen and (max-width:460px) and (min-width:0px) {
-  /* .contact-form {
-    bottom: -94%;
-  } */
+@media only screen and (max-width: 780px) and (min-width: 0px) {
+  #main .pre-loader .loader-text-content ul img {
+    max-height: 75px;
+  }
+}
+
+@media only screen and (max-width: 660px) and (min-width: 0px) {
+  #main .pre-loader .loader-text-content ul img {
+    max-height: 65px;
+  }
+
+  #main .pre-loader .loader-text-content ul li p {
+    font-size: 55px;
+  }
+
+  #main .main-inner .main-text-content .main-content .content-text h2 {
+    font-size: 18px;
+    max-width: 570px;
+    margin-top: 15px;
+  }
+
+  #main .main-inner .main-text-content .main-content .content-text h1 {
+    font-size: 38px;
+  }
+}
+
+@media only screen and (max-width:480px) and (min-width:0px) {
+  #main .main-inner .main-text-content .main-content .content-text p {
+    font-size: 20px;
+    max-width: 400px;
+  }
+
+  #main .main-inner .main-text-content .main-content .main-contact-button {
+    max-width: 150px;
+    height: 30px;
+  }
+
+  #main .main-inner .main-text-content .main-content .main-contact-button .contact-button {
+    font-size: 16px;
+  }
 
 }
 
 @media only screen and (max-width:420px) and (min-width:0px) {
   .contact-form {
-    bottom: -880px;
+    bottom: -860px;
+  }
+
+  #main .main-inner .main-text-content .main-content .content-text h2 {
+    font-size: 14px;
+    max-width: 370px;
+  }
+
+  #main .main-inner .main-text-content .main-content .content-text h1 {
+    font-size: 38px;
+  }
+}
+
+@media only screen and (max-width:390px) and (min-width:0px) {
+
+  /* .contact-form {
+    bottom: -131%;
+  } */
+  #main .pre-loader .loader-text-content ul li p {
+    font-size: 40px;
+    line-height: 62px;
+  }
+
+  #main .pre-loader .loader-text-content ul img {
+    max-height: 40px;
+  }
+
+  #main .main-inner .main-text-content .main-content .content-text h1 {
+    font-size: 34px;
+  }
+
+  #main .main-inner .main-text-content .main-content .content-text p {
+    font-size: 16px;
+    max-width: 400px;
+  }
+}
+
+@media only screen and (max-width:320px) and (min-width:0px) {
+  .contact-form .img-line {
+    margin-top: 20px;
+  }
+
+  .contact-form {
+    bottom: -890px;
   }
 
   #main .main-inner .main-text-content .main-content .content-text h2 {
     font-size: 12px;
+    max-width: 270px;
   }
-
-}
-
-@media only screen and (max-width:390px) and (min-width:0px) {
-  /* .contact-form {
-    bottom: -131%;
-  } */
-
 }
