@@ -1,30 +1,30 @@
-// function animateListItems() {
-//   gsap.to(".loader-text-content ul", {
-//     y: "-90%",
-//     ease: "power2.in",
-//     duration: 6,
-//     onComplete: function () {
-//       gsap.to(".loader-text-content ul", {
-//         opacity: 0,
-//         duration: 1,
-//       });
-//     },
-//   });
+function animateListItems() {
+  gsap.to(".loader-text-content ul", {
+    y: "-90%",
+    ease: "power2.in",
+    duration: 6,
+    onComplete: function () {
+      gsap.to(".loader-text-content ul", {
+        opacity: 0,
+        duration: 1,
+      });
+    },
+  });
 
-//   gsap.to(".pre-loader", {
-//     display: "none",
-//     delay: 8,
-//   });
+  gsap.to(".pre-loader", {
+    display: "none",
+    delay: 8,
+  });
 
-//   gsap.to(".slab", {
-//     y: "-100%",
-//     duration: 2,
-//     stagger: 0.3,
-//     ease: "power2.inOut",
-//     delay: 6.3,
-//   });
-// }
-// animateListItems();
+  gsap.to(".slab", {
+    y: "-100%",
+    duration: 2,
+    stagger: 0.3,
+    ease: "power2.inOut",
+    delay: 6.3,
+  });
+}
+animateListItems();
 
 function clickEventsButtons() {
   const mainContactButton = document.querySelector(".main-contact-button");
