@@ -182,6 +182,7 @@
 
   #main .pre-loader .loader-text-content ul li p {
     font-size: 55px;
+    line-height: 82px;
   }
 
   #main .main-inner .main-text-content .main-content .content-text h2 {
@@ -192,6 +193,12 @@
 
   #main .main-inner .main-text-content .main-content .content-text h1 {
     font-size: 38px;
+  }
+}
+
+@media only screen and (max-width:540px) and (min-width:0px) {
+  #main .pre-loader .loader-text-content ul img {
+    max-height: 55px;
   }
 }
 
@@ -210,6 +217,14 @@
     font-size: 16px;
   }
 
+  #main .pre-loader .loader-text-content ul img {
+    max-height: 55px;
+  }
+
+  #main .pre-loader .loader-text-content ul li p {
+    line-height: 72px;
+    font-size: 45px;
+  }
 }
 
 @media only screen and (max-width:420px) and (min-width:0px) {
@@ -224,6 +239,10 @@
 
   #main .main-inner .main-text-content .main-content .content-text h1 {
     font-size: 38px;
+  }
+
+  #main .pre-loader .loader-text-content ul img {
+    max-height: 45px;
   }
 }
 
