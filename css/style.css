@@ -172,7 +172,7 @@ body {
 
 .contact-form {
   position: absolute;
-  bottom: -66%;
+  bottom: -600px;
   background: #fff;
   width: 100%;
   max-width: 80%;
