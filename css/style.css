@@ -87,6 +87,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+  transition: all .5s ease;
 }
 
 #main .main-inner .main-text-content .main-content {
@@ -229,7 +230,9 @@ body {
 
 .contact-form .form-inner .form-content .form-top-bar {
   display: flex;
-  padding-right: 10px;
+  max-width: 1240px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .contact-form .form-inner .close-button {
