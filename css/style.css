@@ -337,6 +337,11 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: .5s ease all;
+}
+
+.contact-form .contact-social a:hover::before {
+  background: #f6f6f6;
 }
 
 
@@ -344,8 +349,6 @@ body {
   max-height: 25px;
   margin: 0 auto;
   object-fit: contain;
-  /* background: #fff;
-    height: 100%; */
   position: relative;
   z-index: 9999;
 }
