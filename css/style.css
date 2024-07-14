@@ -133,6 +133,7 @@ body {
   border-radius: 50px;
   background-color: #ffffff60;
   max-width: 210px;
+  min-width: 210px;
   height: 60px;
   margin: 0 auto;
   padding: 10px;
