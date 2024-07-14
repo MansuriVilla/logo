@@ -1,1 +1,16 @@
-@font-face{font-family:brooklyn;src:url(../fonts/Fregan\ Serif\ Bold.woff2)}@font-face{font-family:brooklyn-light;src:url(../fonts/Poppins-Light.woff2)}@font-face{font-family:brooklyn-lightex;src:url(../fonts/Poppins-ExtraLight.woff2)}@font-face{font-family:brooklyn-mid;src:url(../fonts/Poppins-Medium.woff2)}
+@font-face {
+  font-family: brooklyn;
+  src: url(../fonts/Fregan\ Serif\ Bold.woff2);
+}
+@font-face {
+  font-family: brooklyn-light;
+  src: url(../fonts/Poppins-Light.woff2);
+}
+@font-face {
+  font-family: brooklyn-lightex;
+  src: url(../fonts/Poppins-ExtraLight.woff2);
+}
+@font-face {
+  font-family: brooklyn-mid;
+  src: url(../fonts/Poppins-Medium.woff2);
+}

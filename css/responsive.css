@@ -1,1 +1,311 @@
-@media only screen and (max-width:1440px) and (min-width:0){.contact-form .form-inner .form-content .form-brand-img{max-width:100px}.contact-form .form-inner .form-content .details .contact-us .contact-inner a{padding:25px 20px}.contact-form .form-inner .form-content .details .form .form-input-holder form .form-field-holder .field,.contact-form .form-inner .form-content .details .form .form-input-holder form .form-field-holder .iti{height:55px}.contact-form .form-inner .close-button{max-width:45px}#main .main-inner .main-text-content .main-content .content-text h1{font-size:52px}#main .main-inner .main-text-content .main-content .content-text h2{font-size:24px;max-width:810px}#main .main-inner .main-text-content .main-content .main-contact-button{max-width:190px;height:40px}#main .main-inner .main-text-content .main-content .main-contact-button .contact-button{font-size:18px}.contact-form{bottom:-570px}}@media only screen and (max-width:1300px) and (min-width:0){.contact-form .form-inner .form-content .details .contact-us .contact-inner a{font-size:18px}.contact-form .form-inner .form-content .details .contact-us .contact-inner,.contact-form .form-inner .form-content .details .form .form-input-holder{max-width:400px}.contact-form .contact-social a{padding:3px}.contact-form .form-inner .form-content .form-brand-img{max-width:90px}}@media only screen and (max-width:1280px) and (min-width:0){.contact-form{bottom:-530px}}@media only screen and (max-width:1199px) and (min-width:0){.contact-form .form-inner .form-content .details .contact-us .contact-inner a{font-size:16px;padding:20px 15px;border-radius:13px}.contact-form .form-inner .form-content .details .contact-us .contact-inner,.contact-form .form-inner .form-content .details .form .form-input-holder{max-width:370px}.contact-form .contact-social a{padding:3px}.contact-form .contact-social a img{max-height:25px}.contact-form .form-inner .form-content .form-brand-img{max-width:85px}.contact-form .form-inner .close-button{max-width:40px}.contact-form .form-inner .form-content .details{gap:0}.contact-form{max-width:95%;border-radius:30px 30px 0 0}.contact-form .form-inner .form-content .details .form .form-input-holder form .form-field-holder .field input,.contact-form .form-inner .form-content .details .form .form-input-holder form .form-field-holder .iti input{font-size:22px}.contact-form .form-inner .form-content .details .form .form-input-holder form .form-field-holder .field,.contact-form .form-inner .form-content .details .form .form-input-holder form .form-field-holder .iti{height:50px}.contact-form{bottom:-856px}}@media only screen and (max-width:991px) and (min-width:0){#main .main-inner .main-text-content .main-content .content-text h1{font-size:42px;margin-bottom:15px}#main .main-inner .main-text-content .main-content .content-text h2{font-size:20px;max-width:670px}.contact-form .form-inner .form-content .details{gap:30px;flex-wrap:wrap-reverse;background-color:#fff}.contact-form .form-inner .close-button{z-index:999}.contact-form.open .form-inner{height:500px;overflow-x:scroll}.contact-form .form-inner .form-content .details .section{max-width:95%;margin:0 auto}.contact-form.open{overflow:hidden}.contact-form.open .img-line{display:none}}@media only screen and (max-width:780px) and (min-width:0){#main .pre-loader .loader-text-content ul img{max-height:75px}}@media only screen and (max-width:660px) and (min-width:0){#main .pre-loader .loader-text-content ul img{max-height:65px}#main .pre-loader .loader-text-content ul li p{font-size:55px;line-height:82px}#main .main-inner .main-text-content .main-content .content-text h2{font-size:18px;max-width:570px;margin-top:15px}#main .main-inner .main-text-content .main-content .content-text h1{font-size:38px}}@media only screen and (max-width:540px) and (min-width:0){#main .pre-loader .loader-text-content ul img{max-height:55px}}@media only screen and (max-width:480px) and (min-width:0){#main .main-inner .main-text-content .main-content .content-text p{font-size:20px;max-width:400px}#main .main-inner .main-text-content .main-content .main-contact-button{max-width:150px;height:30px}#main .main-inner .main-text-content .main-content .main-contact-button .contact-button{font-size:16px}#main .pre-loader .loader-text-content ul img{max-height:55px}#main .pre-loader .loader-text-content ul li p{line-height:72px;font-size:45px}}@media only screen and (max-width:420px) and (min-width:0){.contact-form{bottom:-860px}#main .main-inner .main-text-content .main-content .content-text h2{font-size:14px;max-width:370px}#main .main-inner .main-text-content .main-content .content-text h1{font-size:38px}#main .pre-loader .loader-text-content ul img{max-height:45px}}@media only screen and (max-width:390px) and (min-width:0){#main .pre-loader .loader-text-content ul li p{font-size:40px;line-height:62px}#main .pre-loader .loader-text-content ul img{max-height:40px}#main .main-inner .main-text-content .main-content .content-text h1{font-size:34px}#main .main-inner .main-text-content .main-content .content-text p{font-size:16px;max-width:400px}}@media only screen and (max-width:320px) and (min-width:0){.contact-form .img-line{margin-top:20px}.contact-form{bottom:-890px}#main .main-inner .main-text-content .main-content .content-text h2{font-size:12px;max-width:270px}}
+@media only screen and (max-width: 1440px) and (min-width: 0) {
+  .contact-form .form-inner .form-content .form-brand-img {
+    max-width: 100px;
+  }
+
+  .contact-form .form-inner .form-content .details .contact-us .contact-inner a {
+    padding: 25px 20px;
+  }
+
+  .contact-form .form-inner .form-content .details .form .form-input-holder form .form-field-holder .field,
+  .contact-form .form-inner .form-content .details .form .form-input-holder form .form-field-holder .iti {
+    height: 55px;
+  }
+
+  .contact-form .form-inner .close-button {
+    max-width: 45px;
+  }
+
+  #main .main-inner .main-text-content .main-content .content-text h1 {
+    font-size: 52px;
+  }
+
+  #main .main-inner .main-text-content .main-content .content-text h2 {
+    font-size: 24px;
+    max-width: 810px;
+  }
+
+  #main .main-inner .main-text-content .main-content .main-contact-button {
+    max-width: 190px;
+    min-width: 190px;
+    height: 40px;
+  }
+
+  #main .main-inner .main-text-content .main-content .main-contact-button .contact-button {
+    font-size: 18px;
+  }
+
+  .contact-form {
+    bottom: -570px;
+  }
+}
+
+@media only screen and (max-width: 1300px) and (min-width: 0) {
+  .contact-form .form-inner .form-content .details .contact-us .contact-inner a {
+    font-size: 18px;
+  }
+
+  .contact-form .form-inner .form-content .details .contact-us .contact-inner,
+  .contact-form .form-inner .form-content .details .form .form-input-holder {
+    max-width: 400px;
+  }
+
+  .contact-form .contact-social a {
+    padding: 3px;
+  }
+
+  .contact-form .form-inner .form-content .form-brand-img {
+    max-width: 90px;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 0) {
+  .contact-form {
+    bottom: -530px;
+  }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 0) {
+  .contact-form .form-inner .form-content .details .contact-us .contact-inner a {
+    font-size: 16px;
+    padding: 20px 15px;
+    border-radius: 13px;
+  }
+
+  .contact-form .form-inner .form-content .details .contact-us .contact-inner,
+  .contact-form .form-inner .form-content .details .form .form-input-holder {
+    max-width: 370px;
+  }
+
+  .contact-form .contact-social a {
+    padding: 3px;
+  }
+
+  .contact-form .contact-social a img {
+    max-height: 25px;
+  }
+
+  .contact-form .form-inner .form-content .form-brand-img {
+    max-width: 85px;
+  }
+
+  .contact-form .form-inner .close-button {
+    max-width: 40px;
+  }
+
+  .contact-form .form-inner .form-content .details {
+    gap: 0;
+  }
+
+  .contact-form {
+    max-width: 95%;
+    border-radius: 30px 30px 0 0;
+  }
+
+  .contact-form .form-inner .form-content .details .form .form-input-holder form .form-field-holder .field input,
+  .contact-form .form-inner .form-content .details .form .form-input-holder form .form-field-holder .iti input {
+    font-size: 22px;
+  }
+
+  .contact-form .form-inner .form-content .details .form .form-input-holder form .form-field-holder .field,
+  .contact-form .form-inner .form-content .details .form .form-input-holder form .form-field-holder .iti {
+    height: 50px;
+  }
+
+  .contact-form {
+    bottom: -856px;
+  }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 0) {
+  #main .main-inner .main-text-content .main-content .content-text h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+  }
+
+  #main .main-inner .main-text-content .main-content .content-text h2 {
+    font-size: 20px;
+    max-width: 670px;
+  }
+
+  .contact-form .form-inner .form-content .details {
+    gap: 30px;
+    flex-wrap: wrap-reverse;
+    background-color: #fff;
+  }
+
+  .contact-form .form-inner .close-button {
+    z-index: 999;
+  }
+
+  .contact-form.open .form-inner {
+    height: 90vh;
+    overflow-x: scroll;
+  }
+
+  .contact-form .form-inner .form-content .details .section {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+
+  .contact-form.open {
+    overflow: hidden;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .contact-form.open .img-line {
+    display: none;
+  }
+
+  .contact-form {
+    max-width: 100%;
+    border-radius: 0px;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .contact-form.open .form-inner .form-content {
+    padding-top: 70px;
+  }
+
+  .contact-form .form-inner .form-content .details .contact-us .contact-inner a {
+    border-radius: 15px;
+  }
+}
+
+@media only screen and (max-width: 780px) and (min-width: 0) {
+  #main .pre-loader .loader-text-content ul img {
+    max-height: 75px;
+  }
+}
+
+@media only screen and (max-width: 660px) and (min-width: 0) {
+  #main .pre-loader .loader-text-content ul img {
+    max-height: 65px;
+  }
+
+  #main .pre-loader .loader-text-content ul li p {
+    font-size: 55px;
+    line-height: 82px;
+  }
+
+  #main .main-inner .main-text-content .main-content .content-text h2 {
+    font-size: 18px;
+    max-width: 570px;
+    margin-top: 15px;
+  }
+
+  #main .main-inner .main-text-content .main-content .content-text h1 {
+    font-size: 38px;
+  }
+}
+
+@media only screen and (max-width: 540px) and (min-width: 0) {
+  #main .pre-loader .loader-text-content ul img {
+    max-height: 55px;
+  }
+}
+
+@media only screen and (max-width: 480px) and (min-width: 0) {
+  #main .main-inner .main-text-content .main-content .content-text p {
+    font-size: 20px;
+    max-width: 400px;
+  }
+
+  #main .main-inner .main-text-content .main-content .main-contact-button {
+    max-width: 150px;
+    min-width: 150px;
+    height: 30px;
+  }
+
+  #main .main-inner .main-text-content .main-content .main-contact-button .contact-button {
+    font-size: 16px;
+  }
+
+  #main .pre-loader .loader-text-content ul img {
+    max-height: 55px;
+  }
+
+  #main .pre-loader .loader-text-content ul li p {
+    line-height: 72px;
+    font-size: 45px;
+  }
+
+  .contact-form .form-inner .form-content .details .contact-us .contact-inner h3,
+  .contact-form .form-inner .form-content .details .form .form-input-holder h3 {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 420px) and (min-width: 0) {
+  .contact-form {
+    bottom: -860px;
+  }
+
+  #main .main-inner .main-text-content .main-content .content-text h2 {
+    font-size: 14px;
+    max-width: 370px;
+  }
+
+  #main .main-inner .main-text-content .main-content .content-text h1 {
+    font-size: 38px;
+  }
+
+  #main .pre-loader .loader-text-content ul img {
+    max-height: 45px;
+  }
+}
+
+@media only screen and (max-width: 390px) and (min-width: 0) {
+  #main .pre-loader .loader-text-content ul li p {
+    font-size: 40px;
+    line-height: 62px;
+  }
+
+  #main .pre-loader .loader-text-content ul img {
+    max-height: 40px;
+  }
+
+  #main .main-inner .main-text-content .main-content .content-text h1 {
+    font-size: 34px;
+  }
+
+  #main .main-inner .main-text-content .main-content .content-text p {
+    font-size: 16px;
+    max-width: 400px;
+  }
+
+  .contact-form .form-inner .form-content .details .contact-us .contact-inner h3,
+  .contact-form .form-inner .form-content .details .form .form-input-holder h3 {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 320px) and (min-width: 0) {
+  .contact-form .img-line {
+    margin-top: 20px;
+  }
+
+  .contact-form {
+    bottom: -890px;
+  }
+
+  #main .main-inner .main-text-content .main-content .content-text h2 {
+    font-size: 12px;
+    max-width: 270px;
+  }
+
+  .contact-form .form-inner .form-content .details .contact-us .contact-inner a {
+    font-size: 13px;
+  }
+
+  .contact-form .form-inner .form-content .details .contact-us .contact-inner img {
+    max-width: 15px;
+  }
+
+  .contact-form .form-inner .form-content .details .contact-us .contact-inner h3,
+  .contact-form .form-inner .form-content .details .form .form-input-holder h3 {
+    font-size: 20px;
+  }
+}

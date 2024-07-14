@@ -1,1 +1,45 @@
-::selection{background:linear-gradient(45deg,var(--light-blue),var(--light-green));color:#000}input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}input[type="number"]{-moz-appearance:textfield}::placeholder,::-moz-placeholder{font-size:24px}h1,h2,h3,h4,h5,h6,p{margin:0;padding:0}a{text-decoration:none}button,input{outline:0;border:0;background:#fff0;box-shadow:none;padding:0}ul{padding:0;margin:0}ul li{margin:0;padding:0;list-style:none}button{color:#fff}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+::placeholder,
+::-moz-placeholder {
+  font-size: 24px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+button,
+input {
+  outline: 0;
+  border: 0;
+  background: #fff0;
+  box-shadow: none;
+  padding: 0;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+button {
+  color: #fff;
+}
