@@ -139,7 +139,7 @@
   }
 
   .contact-form.open .form-inner {
-    min-height: 100vh;
+    height: 100vh;
     overflow-x: scroll;
   }
 
