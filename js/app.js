@@ -17,6 +17,9 @@ function animateListItems() {
     });
 }
 animateListItems();
+
+
+
 function clickEventsButtons() {
     const mainContactButton = document.querySelector(".main-contact-button");
     const contactFormMain = document.querySelector(".contact-form");
@@ -32,6 +35,9 @@ function clickEventsButtons() {
     });
 }
 clickEventsButtons();
+
+
+
 function countryCode() {
     const mobileInput = document.querySelector(".mobile_code");
     const iti = window.intlTelInput(mobileInput, {
@@ -86,7 +92,19 @@ function formValidation() {
             document.getElementById('contactForm').submit(); // Submit the form if all fields are valid
         }
     });
+    document.addEventListener('DOMContentLoaded', function () {
+        const phoneNumberInput = document.getElementById('PhoneNumber');
+        phoneNumberInput.addEventListener('input', function () {
+            let input = phoneNumberInput.value;
+
+            input = input.replace(/\D/g, '');
+
+            phoneNumberInput.value = input;
+        });
+    });
 }
+
+
 
 function resetErrors() {
     const errorElements = document.querySelectorAll('#contactForm .error img');
@@ -95,5 +113,6 @@ function resetErrors() {
     });
 }
 
-formValidation(); // Call the formValidation function to initialize form validation
+formValidation();
+
 

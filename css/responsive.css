@@ -139,7 +139,7 @@
   }
 
   .contact-form.open .form-inner {
-    height: 85vh;
+    height: 60vh;
     overflow-x: scroll;
   }
 
@@ -152,6 +152,11 @@
     overflow: hidden;
     visibility: visible;
     opacity: 1;
+    display: block;
+  }
+
+  .contact-form {
+    display: none;
   }
 
   .contact-form.open .img-line {
@@ -160,13 +165,13 @@
 
   .contact-form {
     max-width: 100%;
-    border-radius: 0px;
+    border-radius: 20px 20px 0px 0px;
     visibility: hidden;
     opacity: 0;
   }
 
   .contact-form.open .form-inner .form-content {
-    padding-top: 70px;
+    padding-top: 20px;
   }
 
   .contact-form .form-inner .form-content .details .contact-us .contact-inner a {
@@ -201,9 +206,38 @@
   }
 }
 
-@media only screen and (max-width: 540px) and (min-width: 0) {
+@media only screen and (max-width: 575px) and (min-width: 0) {
   #main .pre-loader .loader-text-content ul img {
     max-height: 55px;
+  }
+
+  .contact-form .form-inner .form-content .details .contact-us .contact-inner,
+  .contact-form .form-inner .form-content .details .form .form-input-holder {
+    max-width: 330px;
+  }
+
+  .contact-form .form-inner .form-content .details .form .form-input-holder form .form-field-holder .field,
+  .contact-form .form-inner .form-content .details .form .form-input-holder form .form-field-holder .iti {
+    height: 40px;
+  }
+
+  .contact-form .form-inner .form-content .details .contact-us .contact-inner a {
+    font-size: 14px;
+  }
+
+  .contact-form .contact-social a img {
+    max-height: 15px;
+  }
+
+  .contact-form .contact-social a {
+    height: 30px;
+    width: 30px;
+  }
+
+  .contact-form .form-inner .form-content .details .form .form-input-holder .submit-button-main .submit-button {
+    max-width: 140px;
+    height: 40px;
+    font-size: 14px;
   }
 }
 
@@ -235,6 +269,11 @@
   .contact-form .form-inner .form-content .details .contact-us .contact-inner h3,
   .contact-form .form-inner .form-content .details .form .form-input-holder h3 {
     font-size: 24px;
+  }
+
+  .contact-form .form-inner .close-button {
+    position: relative;
+    right: 23px;
   }
 }
 
